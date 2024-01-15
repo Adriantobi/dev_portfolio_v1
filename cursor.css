@@ -1,0 +1,33 @@
+#cursor {
+    height: 12px;
+    width: 12px;
+    z-index: 4000;
+    display: none;
+    border-radius: 20px;
+    backdrop-filter:invert(100%);
+    position: fixed;
+    transition: width ease-in-out 0.1s, height ease-in-out 0.1s;
+}
+
+*:hover #cursor {
+    display: flex;
+}
+
+#cursor.enlarged {
+    width: 22px;
+    height: 22px;
+}
+
+@media(max-width: 940px) {
+    * {
+        cursor: auto;
+    }
+
+    *:hover #cursor {
+        display: none;
+    }
+
+    #cursor {
+        display: none;
+    }
+}

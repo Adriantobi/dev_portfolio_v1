@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://adriantdv2.netlify.com/images/adrianBrowserIcon.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="cursor.js" async defer></script>
+    <script src="dark-mode.js" async defer></script>
+    <script src="index.js" async defer></script>
+    <title>Adrian Tobi - Portfolio</title>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div class="container">
+        <nav>
+            <div class="main-info">
+                <figure class="logo">
+                    <img src="https://adriantdv2.netlify.com/images/adrian.jpg" alt="Adrian Icon">
+                </figure>
+        
+                <header>
+                    <h1>Adrian Tobi</h1>
+                    <h2>WEB DEVELOPER</h2>
+                </header>
+
+                <div id="mobile-menu" onclick="changeMenu();"><img src="https://img.icons8.com/3d-fluency/256/menu.png" alt="Menu Icon"></div>
+            </div>
+    
+            <div id="options-select">
+                <ul class="menu-options">
+                    <li onclick="changeMenu()"><a href="#hero"><img src="https://img.icons8.com/3d-fluency/256/home.png" alt="Home Address Icon"> Home</a></li>
+                    <li onclick="changeMenu()"><a href="#about-me"><img src="https://img.icons8.com/3d-fluency/256/person-male.png" alt="Person Male Icon"> About</a></li>
+                    <li onclick="changeMenu()"><a href="#education"><img src="https://img.icons8.com/3d-fluency/256/graduation-cap.png" alt="Graduation Cap"> Education</a></li>
+                    <li onclick="changeMenu()"><a href="#experience"><img src="https://img.icons8.com/3d-fluency/256/keyboard.png" alt="Keyboard Icon"> Experience</a></li>
+                    <li onclick="changeMenu()"><a href="#projects"><img src="https://img.icons8.com/3d-fluency/256/maintenance.png" alt="Tools"> Projects</a></li>
+                    <!-- <li onclick="changeMenu()"><a href="blog.html"><img src="https://img.icons8.com/3d-fluency/256/under-computer.png" alt="Under Computer Icon"> Blog</a></li> -->
+                </ul>
+    
+                <div class="footer-info">
+                    <div class="contact">
+                        <a href="https://www.instagram.com/adrian.td/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/instagram-new.png" alt="Instagram Icon"></a>
+                        <a href="https://twitter.com/adriantdoav" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/twitter-circled.png" alt="Twitter Icon"></a>
+                        <a href="https://github.com/Adriantobi" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/github.png" alt="Github Icon"></a>
+                        <a href="https://www.linkedin.com/in/adriantd/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/linkedin.png" alt="Linkedin Icon"></a>
+                        <a href="mailto:talktotobi.a@gmail.com" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/mail.png" alt="Mail Icon"></a>
+                    </div>
+                    <footer>© 2023 Adrian Tobi</footer>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div id="hero" class="card">
+                <section id="introSection">
+                    <h1 id="hello">Hi, my name is</h1>
+                    <h2 class="largeHeading">Adrian Tobi</h2>
+                    <h3 class="largeHeading">I develop things for the <code>&lt;/web&gt;</code></h3>
+                    <p id="shortInfoOnMe">I’m an aspiring software engineer specializing in building and designing astonishing digital experiences for users. Currently, I’m focused on building some projects of my own.</p>
+                </section>
+            </div>
+
+            <div id="about-me" class="card">
+                <h1><img src="https://img.icons8.com/3d-fluency/256/person-male.png" alt="Person Male Icon"> About Me</h1>
+                <section id="aboutSection">
+                    <figure>
+                        <img src="https://img.icons8.com/3d-fluency/256/hard-working.png" alt="Hard Working Icon">
+                    </figure>
+                    <article>
+                        <h1>Hello there!!!</h1>
+                        <p>I go by Adrian Tobi and I love building reactive software that goes live on the internet. My interest in web development  was sparked back in 2016. Fast forward to right now I have started my degree in computer science and I have explored many different languages, tools, libraries and APIs. I live on the internet and aim to learn as many of the things that it has to offer.</p>
+                        <div class="about-me-footer">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/react-5645899-4695757.png?f=webp" alt="React Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png?f=webp" alt="HTML Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/java-script-5645832-4695690.png?f=webp" alt="JavaScript Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/flutter-5562357-4642761.png?f=webp" alt="Flutter Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/python-6815592-5602757.png" alt="Python Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/vuejs-4387636-3640297.png" alt="Vue Icon">
+                            <img src="https://cdn3d.iconscout.com/3d/free/thumb/css3-1-5645890-4695748.png" alt="CSS Icon">
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <div id="education" class="card">
+                <h1><img src="https://img.icons8.com/3d-fluency/256/graduation-cap.png" alt="Graduation Cap Icon"> Education</h1>
+                <section id="educationSection">
+                    <ul>
+                        <li>
+                            <p class="year">09/2022 - Present</p>
+                            <p>BSc Computer Science (1st Year), Queen Mary University London</p>
+                        </li>
+                        <li>
+                            <p class="year">09/2021 - 08/2022</p>
+                            <p>A Levels, St. Andrew's Catholic School</p>
+                        </li>
+                        <li>
+                            <p class="year">04/2019 - 01/2020</p>
+                            <p>High School, Epsom and Ewell High School</p>
+                        </li>
+                    </ul>
+
+                    <figure>
+                        <img src="https://img.icons8.com/3d-fluency/256/contract.png" alt="Diploma">
+                    </figure>
+                </section>
+            </div>
+
+            <div id="experience" class="card">
+                <h1><img src="https://img.icons8.com/3d-fluency/256/keyboard.png" alt="Keyboard Icon"> Experience</h1>
+                <section id="experienceSection">
+                    <ul>
+                        <li>
+                            <div class="experience-header">
+                                <figure>
+                                    <img src="https://img.icons8.com/3d-fluency/256/music.png" alt="Music Icon">
+                                </figure>
+                                <div class="work-place">
+                                    <h1>Front-End Developer</h1>
+                                    <h2><a href="https://wedance.vip" target="_blank">WeDance</a></h2>
+                                    <!-- <p>WeDance is a closed social network for dancers and non-profit international dance community.</p> -->
+                                    <h3>July 2021 to August 2021 (2 months)</h3>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><p>Used Vue.js to fix bugs given by various tickets on the github codebase.</p></li>
+                                <li><p>Helped in designing and building the new WeDance version.</p></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="experience-header">
+                                <figure>
+                                    <img src="https://img.icons8.com/3d-fluency/256/design.png" alt="Design Icon">
+                                </figure>
+                                <div class="work-place">
+                                    <h1>Front-End Developer</h1>
+                                    <h2>Ikebio Clothing</h2>
+                                    <h3>April 2022 to June 2022 (3 months)</h3>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><p>Created the website using the service Shopify to enable the business owner to make changes without my help in the future using the simple system.</p></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="experience-header">
+                                <figure>
+                                    <img src="https://img.icons8.com/3d-fluency/256/worker-male.png" alt="Worker Icon">
+                                </figure>
+                                <div class="work-place">
+                                    <h1>Software Engineer</h1>
+                                    <h2><a href="https://www.goldmansachs.com/" target="_blank">Goldman Sachs</a></h2>
+                                    <h3>August 2021 to September 2021 (2 months)</h3>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><p>Cracked leaked password database that had different hashing types like SHA-256, MD5 etc.</p></li>
+                                <li><p>Used services like hashcat to run the passwords through different hashing algorithms and crack them using methods such as brute force.</p></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="experience-header">
+                                <figure>
+                                    <img src="https://img.icons8.com/3d-fluency/256/worker-male.png" alt="Worker Icon">
+                                </figure>
+                                <div class="work-place">
+                                    <h1>Software Engineer</h1>
+                                    <h2><a href="https://www.jpmorgan.com/global" target="_blank">JP Morgan Chase & Co.</a></h2>
+                                    <h3>July 2021 to August 2021 (2 months)</h3>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><p>Built an interface with a stock price data feed for users to check different stock.</p></li>
+                                <li><p>Used JPMorgan Chase frameworks and tools display data visually for traders.</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="projects" class="card">
+                <h1><img src="https://img.icons8.com/3d-fluency/256/maintenance.png" alt="Tools"> Projects</h1>
+                <section id="projectsSection">
+                    <ul>
+                        <li>
+                            <a href="https://lofiat.github.io" target="_blank">
+                                <figure>
+                                    <img src="images/DarkUx.png" alt="DarkUx">
+                                </figure> 
+
+                                <h1>Website</h1>
+                                <p>I created a study space website to run on laptops, tablets and other large devices</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://adriantd.com" target="_blank">
+                                <figure>
+                                    <img src="images/Dev Portfolio.png" alt="Developer Portfolio">
+                                </figure>
+
+                                <h1>Website</h1>
+                                <p>I built a personal portfolio to display all of my projects as well as my experience as a developer</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://adriantobi.github.io" target="_blank">
+                                <figure>
+                                    <img src="images/Photography Portfolio.png" alt="Photography Portfolio">
+                                </figure>
+
+                                <h1>Website</h1>
+                                <p>Built a custom portfolio website for my photography</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">
+                                <figure>
+                                    <img src="images/Moxie Finance.png" alt="Moxie">
+                                </figure>
+
+                                <h1>Website</h1>
+                                <p>Currently building a website for an accountancy firm</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="footer" class="card">
+                <div class="footer-top">
+                    <h1><a href="">Adrian </br> Tobi</a></h1>
+                    <div class="link-lists">
+                        <div class="colElement">
+                            <ul>
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#about-me">About</a></li>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#experience">Experience</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                            </ul>
+                        </div>
+    
+                        <div class="colElement">
+                            <ul>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="sign-in.html">Sign In</a></li>
+                                <li><a href="Adrian Tobi CV.pdf" target="_blank">CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <footer>Adrian Tobi © 2023 — Proudly written with HTML, CSS, JS and PHP</footer>
+                    <div class="display-mode">
+                        <p>Display Mode</p>
+                        <input type="checkbox" id="mode"><label for="mode"></label>
+                    </div>
+                    <div class="contact footer-links">
+                        <a href="https://www.instagram.com/adrian.td/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/instagram-new.png" alt="Instagram Icon"></a>
+                        <a href="https://twitter.com/adriantdoav" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/twitter-circled.png" alt="Twitter Icon"></a>
+                        <a href="https://github.com/Adriantobi" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/github.png" alt="Github Icon"></a>
+                        <a href="https://www.linkedin.com/in/adriantd/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/linkedin.png" alt="Linkedin Icon"></a>
+                        <a href="mailto:talktotobi.a@gmail.com" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/mail.png" alt="Mail Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;500&display=swap');
+
+:root, :root.light {
+    --font-main: Circular Std;
+    --font-secondary: Source Code Pro;
+    --base: #000000;
+    --primary: #ffffff;
+    --secondary: #025cb1;
+    --text-secondary: #3a444c;
+    --main-bg: #f6f7ff;
+    --other-bg: #eaeaea;
+    --box-shadow: rgba(74, 99, 231, 0.1);
+}
+
+:root.dark {
+    --font-main: Circular Std;
+    --font-secondary: Source Code Pro;
+    --base: #ffffff;
+    --primary: #191919;
+    --secondary: #025cb1;
+    --text-secondary: #c5bbb3;
+    --main-bg: #090800;
+    --other-bg: #151515;
+    --box-shadow: rgba(181, 156, 24, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-main: Circular Std;
+        --font-secondary: Source Code Pro;
+        --base: #ffffff;
+        --primary: #191919;
+        --secondary: #025cb1;
+        --text-secondary: #c5bbb3;
+        --main-bg: #090800;
+        --other-bg: #151515;
+        --box-shadow: rgba(181, 156, 24, 0.1);
+    }
+
+    :root.light {
+        --font-main: Circular Std;
+        --font-secondary: Source Code Pro;
+        --base: #000000;
+        --primary: #ffffff;
+        --secondary: #025cb1;
+        --text-secondary: #3a444c;
+        --main-bg: #f6f7ff;
+        --other-bg: #eaeaea;
+        --box-shadow: rgba(74, 99, 231, 0.1);
+    }
+}

@@ -1,0 +1,928 @@
+@import './vars.css';
+@import './cursor.css';
+
+* {
+    font-family: var(--font-main), sans-serif;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    text-decoration: none;
+    cursor: none;
+}
+
+html {
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--main-bg);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #202020f4;    /* color of the scroll thumb */
+    border-radius: 25px;       /* roundness of the scroll thumb */
+    border: 4px solid var(--main-bg);  /* creates padding around scroll thumb */
+}
+
+/* NAVMENU */
+
+.container {
+    display: flex;
+    background-color: var(--main-bg);
+    gap: 40px;
+    padding:30px;
+}
+
+nav {
+    position: sticky;
+    top: 30px;
+    background-color: var(--primary);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 6px 15px 0px var(--box-shadow);
+    min-width: 15em;
+    height: fit-content;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    justify-self: flex-end;
+}
+
+.main-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--base);
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    pointer-events: none;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.logo img {
+    height: 80px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header h1, header h2 {
+    width: fit-content;
+}
+
+header h2 {
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu, #mobile-menu img{
+    width: 30px;
+    height: 30px;
+}
+
+#options-select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    transition: padding ease-in-out .2s;
+}
+
+nav ul li:focus >a {
+    color: var(--secondary);
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    color: var(--base);
+    gap: 10px;
+    width:100%;
+    height:100%;
+    transition: color .35s ease-out;
+}
+
+nav ul li:hover {
+    padding-left: 20px;
+}
+
+nav ul li:hover > a {
+    color: var(--secondary);
+}
+
+nav ul img {
+    height: 30px;
+    padding: 2px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--base);
+    gap: 5px;
+}
+
+.footer-info footer {
+    font-size: 12px;
+}
+
+.contact  {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.contact a img {
+    width: 25px;
+    height: 25px;
+}
+
+/* BODY */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    scroll-snap-align: start;
+    background-color: var(--primary);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 6px 15px 0px var(--box-shadow);
+    border-radius: 16px;
+    padding: 40px;
+    height: 491.5px;
+}
+
+.card > h1:first-of-type {
+    display: flex;
+    width: fit-content;
+    color: var(--base);
+    border-bottom: 5px solid var(--secondary);
+    gap: 10px;
+}
+
+.card > h1:first-of-type img {
+    width: 30px;
+    height: 30px;
+}
+
+/* HERO */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero section h1 {
+    font-family: var(--font-secondary), monospace;
+    width: fit-content;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+#hero section h2, #hero section h3 {
+    font-size: 60px;
+    color: var(--base);
+    width: fit-content;
+}
+
+#hero section h3 {
+    color: var(--text-secondary);
+}
+
+#hero section h3 code {
+    background-color: var(--secondary); 
+    color: var(--primary); 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#hero section p {
+    width: 460px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ABOUT ME */
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    height: fit-content;
+}
+
+#about-me section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me section figure, #about-me section figure img {
+    width: 256px;
+    height: 256px;
+}
+
+#about-me section article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 30px;
+    color: var(--text-secondary);
+    gap: 20px;
+    max-width: 800px;
+}
+
+#about-me section article h1 {
+    color: var(--base);
+    font-size: 30px;
+    width: fit-content;
+}
+.about-me-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me-footer img {
+    width: 40px;
+}
+
+/* EDUCATION */
+#education {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#education section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+#education section ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--base);
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+#education section ul li {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid #abaaed;
+    padding-left: 20px;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+#education section ul li:last-child {
+    border: 0px;
+    padding-bottom: 0;
+}
+
+#education section ul li > p:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: 600;
+    gap: 15px;
+    position: relative;
+    margin-top: -15px;
+}
+
+#education section ul li::before{
+    display: flex;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid var(--secondary);
+    box-shadow: 3px 3px 0px #3a444c;
+    border-radius: 50%;
+    margin: 0 0 0 -30px;
+}
+
+/* EXPERIENCE */
+#experience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: fit-content;
+    gap: 50px;
+}
+
+#experience section {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+#experience section ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--base);
+}
+
+#experience section ul li {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 510px;
+    height: 220px;
+    flex-direction: column;
+}
+
+#experience section ul div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#experience section ul div figure {
+    display: flex;
+    width: 70px;
+    height: 70px;
+}
+
+#experience section ul div h1, #experience section ul div h2, #experience section ul div h3 {
+    font-size: 14px;
+    width: fit-content;
+}
+
+#experience section ul div h1, #experience section ul div h2 {
+    font-weight: 800;
+}
+
+#experience section ul div h2, #experience section ul div h2 a, #experience section ul div h3 {
+    color: var(--secondary);
+}
+
+#experience section ul div h2 a {
+    height: 100%;
+    width: 100%;
+}
+
+#experience section ul div p {
+    font-size: 14px;
+}
+
+#experience section ul div div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#experience section ul ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 14px;
+    border-left: 2px solid var(--secondary);
+    margin-left: 35px;
+    padding: 20px 0 0 35px;
+    list-style: disc;
+    gap: 5px;
+}
+
+#experience section ul ul li {
+    height: fit-content;
+    width: fit-content;
+}
+
+/* PROJECTS */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+}
+
+#projects section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projects section ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#projects section ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0 20px 0;
+    justify-content: space-between;
+    box-shadow: 0px 6px 15px 0px var(--box-shadow);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#projects section ul li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    color: var(--base);
+}
+
+#projects section ul li figure {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+    /* height: 280px; */
+    border-radius: 10px;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+    border: 1px solid var(--base);
+}
+
+#projects section ul li figure img {
+    width: 310px;
+}
+
+#projects section ul li a h1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+#projects section ul li a p {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    white-space: pre-line;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+}
+
+#contact section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact section form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#contact section label {
+    color: var(--base);
+}
+
+#contact section form input, #contact section form textarea {
+    display: flex;
+    padding: 15px 20px;
+    border: none;
+    background: var(--box-shadow);
+    border-radius: 10px;
+    color: var(--base);
+    resize: vertical;
+}
+
+#contact section form input[type=submit] {
+    background: var(--secondary);
+    color: #fff;
+    font-size: 16px;
+    width: 300px;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+
+/* FOOTER */
+#footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--other-bg);
+    color: var(--base);
+}
+
+#footer h1 { 
+    display: flex;
+    border-bottom: none;
+    height: fit-content;
+}
+
+#footer h1 a { 
+    color: var(--base);
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--base);
+}
+
+.link-lists {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.colElement {
+    display: flex;
+    width: 200px;
+    height: 225px;
+    flex-direction: column;
+    color: var(--base);
+}
+
+.colElement ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.colElement ul li {
+    display: flex;
+    list-style: none;
+}
+
+.colElement ul li a {
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    color: var(--base);
+    padding: 5px;
+    transition: .35s ease-out;
+}
+
+.colElement ul li a:hover {
+    color: var(--secondary);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom footer {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+}
+
+.display-mode {
+    display: flex;
+    font-size: 14px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox] {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.footer-bottom div label {
+	width: 40px;
+	height: 20px;
+	background-color: var(--text-secondary);
+	display: flex;
+	border-radius: 100px;
+	position: relative;
+}
+
+.footer-bottom div label:after {
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.footer-bottom div input:checked + label {
+	background: var(--secondary);
+}
+
+.footer-bottom div input:checked + label:after {
+	left: calc(100% - 2.5px);
+	transform: translateX(-100%);
+}
+
+.footer-bottom div label:active:after {
+	width: 20px;
+}
+
+.footer-links {
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 414px) {
+    figure {
+        overflow: hidden;
+    }
+
+    #experience section ul div figure {
+        min-width: 70px;
+        height: 70px;
+    }
+
+    #projects section ul li {
+        width: 240px;
+    }
+
+    #projects section ul li figure {
+        width: 230px;
+    }
+
+    #projects section ul li figure img {
+        width: 230px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 940px) {
+    #experience section ul div figure {
+        min-width: 70px;
+        height: 70px;
+    }
+
+    #projects section ul li {
+        width: 290px;
+    }
+
+    #projects section ul li figure {
+        width: 280px;
+    }
+
+    #projects section ul li figure img {
+        width: 280px;
+    }
+}
+
+@media (max-width: 940px) {
+    * {
+        cursor: auto;
+    }
+
+    html {
+        scroll-behavior:smooth;
+        overflow-x: hidden;
+        scroll-padding-top: 120px; 
+    }
+    
+    .container {
+        width: fit-content;
+        flex-wrap: wrap;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    nav {
+        z-index: 1;
+        padding: 15px 20px;
+    }
+
+    .main-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+
+    #mobile-menu {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    #options-select {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li:hover {
+        padding-left: 0;
+    }
+
+    nav ul li:hover > a {
+        color: var(--base);
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .contact  {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    #hero {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #hero section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #hero section h1, #hero section h2, #hero section h3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #hero section p {
+        width: fit-content;
+    }
+
+    #about-me section, #education section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #education {
+        gap: 30px;
+    }
+
+    #experience {
+        gap: 20px;
+    }
+
+    #experience section ul {
+        gap: 30px;
+    }
+
+    #experience section ul li {
+        display: flex;
+        height: fit-content;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .colElement {
+        width: fit-content;
+    }
+
+    .link-lists {
+        width: fit-content;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 1120px) {
+    #projects {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #projects section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #projects section ul {
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects section ul li {
+        margin: 0;
+    }
+
+    #contact section form input[type=submit] {
+        width: 100%;
+    }
+}

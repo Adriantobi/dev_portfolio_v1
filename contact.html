@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://adriantdv2.netlify.com/images/adrianBrowserIcon.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="cursor.js" async defer></script>
+    <script src="dark-mode.js" async defer></script>
+    <script src="index.js" async defer></script>
+    <title>Adrian Tobi - Contact</title>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div class="container">
+        <nav>
+            <div class="main-info">
+                <figure class="logo">
+                    <img src="https://adriantdv2.netlify.com/images/adrian.jpg" alt="Adrian Icon">
+                </figure>
+        
+                <header>
+                    <h1>Adrian Tobi</h1>
+                    <h2>WEB DEVELOPER</h2>
+                </header>
+
+                <div id="mobile-menu" onclick="changeMenu()"><img src="https://img.icons8.com/3d-fluency/256/menu.png" alt="Menu Icon"></div>
+            </div>
+    
+            <div id="options-select">
+                <ul class="menu-options">
+                    <li onclick="changeMenu()"><a href="index.html#hero"><img src="https://img.icons8.com/3d-fluency/256/home.png" alt="Home Address Icon"> Home</a></li>
+                    <li onclick="changeMenu()"><a href="index.html#about-me"><img src="https://img.icons8.com/3d-fluency/256/person-male.png" alt="Person Male Icon"> About</a></li>
+                    <li onclick="changeMenu()"><a href="index.html#education"><img src="https://img.icons8.com/3d-fluency/256/graduation-cap.png" alt="Graduation Cap"> Education</a></li>
+                    <li onclick="changeMenu()"><a href="index.html#experience"><img src="https://img.icons8.com/3d-fluency/256/keyboard.png" alt="Keyboard Icon"> Experience</a></li>
+                    <li onclick="changeMenu()"><a href="index.html#projects"><img src="https://img.icons8.com/3d-fluency/256/maintenance.png" alt="Tools"> Projects</a></li>
+                    <!-- <li onclick="changeMenu()"><a href="blog.html"><img src="https://img.icons8.com/3d-fluency/256/under-computer.png" alt="Under Computer Icon"> Blog</a></li> -->
+                </ul>
+    
+                <div class="footer-info">
+                    <div class="contact">
+                        <a href="https://www.instagram.com/adrian.td/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/instagram-new.png" alt="Instagram Icon"></a>
+                        <a href="https://twitter.com/adriantdoav" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/twitter-circled.png" alt="Twitter Icon"></a>
+                        <a href="https://github.com/Adriantobi" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/github.png" alt="Github Icon"></a>
+                        <a href="https://www.linkedin.com/in/adriantd/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/linkedin.png" alt="Linkedin Icon"></a>
+                        <a href="mailto:talktotobi.a@gmail.com" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/mail.png" alt="Mail Icon"></a>
+                    </div>
+                    <footer>© 2023 Adrian Tobi</footer>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div id="contact" class="card">
+                <h1><img src="https://img.icons8.com/3d-fluency/256/user-location.png" alt="User Location Icon"> Contact</h1>
+                <section id="contactSection">
+                    <form submit="">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                </section>
+            </div>
+
+            <div id="footer" class="card">
+                <div class="footer-top">
+                    <h1><a href="">Adrian </br> Tobi</a></h1>
+                    <div class="link-lists">
+                        <div class="colElement">
+                            <ul>
+                                <li><a href="index.html#hero">Home</a></li>
+                                <li><a href="index.html#about-me">About</a></li>
+                                <li><a href="index.html#education">Education</a></li>
+                                <li><a href="index.html#experience">Experience</a></li>
+                                <li><a href="index.html#projects">Projects</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                            </ul>
+                        </div>
+    
+                        <div class="colElement">
+                            <ul>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="sign-in.html">Sign In</a></li>
+                                <li><a href="Adrian Tobi CV.pdf" target="_blank">CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <footer>Adrian Tobi © 2023 — Proudly written with HTML, CSS, JS and PHP</footer>
+                    <div class="display-mode">
+                        <p>Display Mode</p>
+                        <input type="checkbox" id="mode"><label for="mode"></label>
+                    </div>
+                    <div class="contact footer-links">
+                        <a href="https://www.instagram.com/adrian.td/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/instagram-new.png" alt="Instagram Icon"></a>
+                        <a href="https://twitter.com/adriantdoav" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/twitter-circled.png" alt="Twitter Icon"></a>
+                        <a href="https://github.com/Adriantobi" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/github.png" alt="Github Icon"></a>
+                        <a href="https://www.linkedin.com/in/adriantd/" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/linkedin.png" alt="Linkedin Icon"></a>
+                        <a href="mailto:talktotobi.a@gmail.com" target="_blank"><img src="https://img.icons8.com/3d-fluency/1x/mail.png" alt="Mail Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
